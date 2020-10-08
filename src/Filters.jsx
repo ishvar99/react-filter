@@ -7,6 +7,9 @@ const Filters = (props) => {
   return (
     <>
       <div id="accordion" className="w-25">
+        <button className="btn btn-danger m-2" onClick={props.clearAll}>
+          Clear Filters
+        </button>
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
@@ -54,7 +57,7 @@ const Filters = (props) => {
             data-parent="#accordion"
           >
             <div class="card-body d-flex justify-content-center">
-              <Filter2 />
+              <Filter2 getPrice={props.getPrice} />
             </div>
           </div>
         </div>

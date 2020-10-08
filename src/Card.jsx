@@ -11,7 +11,7 @@ const CardComponent = (props) => {
           {title} (size: {size})
         </Card.Title>
         <Card.Text>{description}</Card.Text>
-        <Card.Title>{price}</Card.Title>
+        <Card.Title>${price}</Card.Title>
       </Card.Body>
     </Card>
   )
